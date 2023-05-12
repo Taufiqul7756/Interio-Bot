@@ -61,8 +61,6 @@ function insertMessage() {
 document.getElementById("mymsg").onsubmit = (e) => {
   e.preventDefault();
   insertMessage();
-
-  // speechSynthesis.speak(new SpeechSynthesisUtterance("hello"));
 };
 
 function serverMessage(response2) {
@@ -105,7 +103,6 @@ function fetchmsg() {
     .then((response) => {
       console.log(response);
       serverMessage(response.Reply); // reply from bot
-      speechSynthesis.speak(new SpeechSynthesisUtterance(response.Reply));
     })
     .catch((error) => console.error("Error h:", error));
 }
