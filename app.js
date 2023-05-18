@@ -2,8 +2,10 @@ const dialogflow = require("@google-cloud/dialogflow");
 const uuid = require("uuid");
 const express = require("express");
 const bodyParser = require("body-parser");
+const serverless = require("serverless-http");
 
 const app = express();
+// const router = express.Router();
 const port = 5000;
 
 // A unique identifier for the given session
@@ -37,10 +39,6 @@ app.post("/send-msg", (req, res) => {
   });
 });
 
-/**
- * Send a query to the dialogflow agent, and return the query result.
- * @param {string} projectId The project to be used
- */
 async function runSample(msg, projectId = "interio-bot-wppq") {
   // Create a new session
   const sessionClient = new dialogflow.SessionsClient({
@@ -56,9 +54,7 @@ async function runSample(msg, projectId = "interio-bot-wppq") {
     session: sessionPath,
     queryInput: {
       text: {
-        // The query to send to the dialogflow agent
         text: msg,
-        // The language used by the client (en-US)
         languageCode: "en-US",
       },
     },
