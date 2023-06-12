@@ -75,7 +75,7 @@ function serverMessage(response2) {
   setTimeout(function () {
     $(".message.loading").remove();
     $(
-      '<div class="message new"><figure class="avatar"><img src="css/bot.png" /></figure>' +
+      '<div class="message new"><figure class="avatar"><img src="css/bot.ico" /></figure>' +
         response2 +
         "</div>"
     )
