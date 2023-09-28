@@ -35,8 +35,11 @@ This chatbot project aims to provide users with an interactive messaging interfa
 
 Once the chatbot is running, users can interact with it by sending messages through the provided UI. The chatbot will respond to user queries based on the training data and responses defined in Dialogflow.
 
-<h3> ChatBot - UI</h3>
 ![Project Image 1](/client//img/Ui.PNG)
+
+<h3> ChatBot - UI</h3>
+
+![Project Image 2](./client/img/response.PNG)
 
 <h3> ChatBot - When responding ...</h3>
 Chatbot will reply according to your query (Chatbot have a inputted response. Read your query and will reply according to your ask)
