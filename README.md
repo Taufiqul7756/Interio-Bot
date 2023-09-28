@@ -32,7 +32,7 @@ This chatbot project aims to provide users with an interactive messaging interfa
 3. Run `npm install` to install project dependencies.
 4. Configure Dialogflow with your project's credentials and training data.
 5. Start the chatbot server using `npm start`.
-   ![Project Image 2](image2.jpg)
+   ![Project Image 2](./client/img/response.PNG)
 
 ## Usage
 
