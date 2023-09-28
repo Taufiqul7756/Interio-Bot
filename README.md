@@ -15,8 +15,6 @@ This project is a chatbot developed using JavaScript, Node.js, and Dialogflow. I
 
 This chatbot project aims to provide users with an interactive messaging interface to ask questions and receive responses based on pre-trained data. It leverages the following technologies: JavaScript, Node.js, and Dialogflow. The chatbot's responses are generated using the Dialogflow platform, which was trained using Python scripts and data from a CSV file.
 
-![Project Image 1](/client//img/Ui.PNG)
-
 ## Technologies Used
 
 - JavaScript
@@ -32,11 +30,17 @@ This chatbot project aims to provide users with an interactive messaging interfa
 3. Run `npm install` to install project dependencies.
 4. Configure Dialogflow with your project's credentials and training data.
 5. Start the chatbot server using `npm start`.
-   ![Project Image 2](./client/img/response.PNG)
 
 ## Usage
 
 Once the chatbot is running, users can interact with it by sending messages through the provided UI. The chatbot will respond to user queries based on the training data and responses defined in Dialogflow.
+
+<h3> ChatBot - UI</h3>
+![Project Image 1](/client//img/Ui.PNG)
+
+<h3> ChatBot - When responding ...</h3>
+Chatbot will reply according to your query (Chatbot have a inputted response. Read your query and will reply according to your ask)
+![Project Image 2](./client/img/response.PNG)
 
 ## License
 
