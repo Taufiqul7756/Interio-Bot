@@ -43,7 +43,6 @@ Once the chatbot is running, users can interact with it by sending messages thro
 
 <h3> ChatBot - When responding ...</h3>
 Chatbot will reply according to your query (Chatbot have a inputted response. Read your query and will reply according to your ask)
-![Project Image 2](./client/img/response.PNG)
 
 ## License
 
