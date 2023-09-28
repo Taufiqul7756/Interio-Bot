@@ -1,7 +1,7 @@
 var $messages = $(".messages-content");
-var serverResponse = "wala";
+// var serverResponse = "wala";
 
-var suggession;
+// var suggession;
 //speech reco
 try {
   var SpeechRecognition =
@@ -19,13 +19,11 @@ $("#start-record-btn").on("click", function (e) {
 recognition.onresult = (event) => {
   const speechToText = event.results[0][0].transcript;
   document.getElementById("MSG").value = speechToText;
-  //console.log(speechToText)
   insertMessage();
 };
 
 function listendom(no) {
   console.log(no);
-  //console.log(document.getElementById(no))
   document.getElementById("MSG").value = no.innerHTML;
   insertMessage();
 }
@@ -102,6 +100,7 @@ function fetchmsg() {
     .then((res) => res.json())
     .then((response) => {
       console.log(response);
+
       serverMessage(response.Reply); // reply from bot
     })
     .catch((error) => console.error("Error h:", error));
