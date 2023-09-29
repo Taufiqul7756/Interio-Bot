@@ -44,6 +44,29 @@ Once the chatbot is running, users can interact with it by sending messages thro
 <h3> ChatBot - When responding ...</h3>
 Chatbot will reply according to your query (Chatbot have a inputted response. Read your query and will reply according to your ask)
 
+## Training
+
+Training the chatbot is a crucial step to ensure accurate and meaningful responses to user queries. Here's how to train the chatbot effectively using Dialogflow:
+
+Divide Data into Small Files:
+Divide your training data into small files containing 100 to 200 text samples each. Keeping files small allows for easier management and validation on Dialogflow.
+
+Review and Manually Adjust Training Data:
+After uploading the small CSV files to Dialogflow, review the training data in the "Training" section. If Dialogflow detects the wrong intent for a query, you can manually select the correct intent. Check the "Intents" section to verify that your queries are correctly mapped to training phrases.
+
+Create Responses for Training Phrases:
+Craft responses tailored to each training phrase. These responses should provide relevant and helpful information based on the user's query. Ensure responses are clear, concise, and align with the intent of the user's input.
+
+Automate Training Data Upload (Python Example):
+Use Python to automate the process of pushing queries to Dialogflow. Below is an example of how you can send a query to Dialogflow using the requests library:
+
+Remember, Dialogflow processes a single query at a time, so you may need to wait a bit if you're dealing with a large number of queries.
+
+Continuously Validate and Refine:
+Regularly validate the chatbot's responses to user queries. If users are not getting the expected responses, review the training data and make necessary adjustments. Continuous validation and refinement are key to an effective and accurate chatbot.
+
+By following these steps and automating the training process, you can ensure that your chatbot responds accurately to a variety of user queries, providing a seamless user experience.
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
