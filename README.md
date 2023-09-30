@@ -60,6 +60,36 @@ Craft responses tailored to each training phrase. These responses should provide
 Automate Training Data Upload (Python Example):
 Use Python to automate the process of pushing queries to Dialogflow. Below is an example of how you can send a query to Dialogflow using the requests library:
 
+        import csv
+        import requests
+
+        api_endpoint = "https://dialogflow.googleapis.com/v2/projects/project_id/agent/sessions/kk:detectIntent"
+        access_token = "input your access token"
+
+        with open("./data_12k_to_15k/12.6k_to_12.8k.csv", "r") as file:
+        reader = csv.reader(file)
+        next(reader) # Skip the header row if presents # Loop through each row in the CSV file
+        for row in reader:
+        text = row[0] # Assuming the text is in the first column
+
+        # Create the request body
+        request_body = {"queryInput": {"text": {"languageCode": "en", "text": text}}}
+
+        # Set the request headers with the access token
+        headers = {
+            "Authorization": f"Bearer {access_token}",
+            "Content-Type": "application/json",
+        }
+
+        # Make the API request with authentication
+        response = requests.post(api_endpoint, json=request_body, headers=headers)
+
+        # Check the status code to ensure the request was successful
+        if response.status_code == 200:
+            print(f"Successfully sent text: {text}")
+        else:
+            print(f"Error sending text: {text}")
+
 Remember, Dialogflow processes a single query at a time, so you may need to wait a bit if you're dealing with a large number of queries.
 
 Continuously Validate and Refine:
