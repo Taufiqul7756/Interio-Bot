@@ -1,8 +1,8 @@
 import requests
 
 # Set up your Dialogflow project ID and access token
-project_id = "test-bot-jacm"
-project_id2 = "palette-chat-qljh"
+
+project_id2 = "your project ID"
 access_token = ""
 
 # Set up the API endpoint for listing intents

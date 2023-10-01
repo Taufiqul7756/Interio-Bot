@@ -2,10 +2,11 @@ import csv
 import requests
 
 # project_id = "palette-chat-qljh"
+project_id = " Your Project ID"
 
 # Set up your API endpoint and access token
-api_endpoint = "https://dialogflow.googleapis.com/v2/projects/palette-chat-qljh/agent/sessions/kk:detectIntent"
-access_token = "ya29.a0AfB_byAkz2_qpabrYJaz8zwdb5DdjsxLyR3AL7LQOBn-Ac0wGn-_-TLEYfCgHvNk01x7RKTIDiqrjWeymkpYG4WEcL3odsg24M0MBM-SGYK_0upIDOsypKwvfrjVFBQm4n_GBvI4XldaKcVgEavVbU7gr_ymyxuTNeeu_JUaCgYKAcwSARASFQHsvYlstkYJtYnoR7t4DmfMhJRnCg0174"
+api_endpoint = "https://dialogflow.googleapis.com/v2/projects/{project_id}/agent/sessions/kk:detectIntent"
+access_token = ""
 
 # Read the CSV file
 with open("./data_12k_to_15k/12.6k_to_12.8k.csv", "r") as file:

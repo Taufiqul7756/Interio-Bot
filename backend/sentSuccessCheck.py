@@ -1,8 +1,11 @@
 import csv
 import requests
 
+
+project_id = "your project ID"
+access_token = ""
 # Set up your API endpoint
-api_endpoint = "https://dialogflow.googleapis.com/v2/projects/sheraspacechatbot-xjmw/agent/sessions/kk:detectIntent "
+api_endpoint = "https://dialogflow.googleapis.com/v2/projects/{project_id}/agent/sessions/kk:detectIntent "
 
 # Read the CSV file
 with open("data.csv", "r") as file:
